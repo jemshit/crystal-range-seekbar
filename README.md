@@ -1,18 +1,22 @@
-[ ![Download](https://api.bintray.com/packages/syedowaisali/maven/crystalrangeseekbar/images/download.svg) ](https://bintray.com/syedowaisali/maven/crystalrangeseekbar/_latestVersion) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Crystal%20Range%20Seekbar-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3996) [![Coding Signals](https://img.shields.io/badge/Coding%20Signals-Crystal%20Range%20Seekbar-orange.svg)](http://codingsignals.com/crystal-range-seekbar-in-android/)
-
-
-
 # Crystal Range Seekbar
 
 An extended version of seekbar and range seekbar with basic and advanced customization.
 
-![alt tag](https://drive.google.com/uc?export=view&id=0B9bDENyIABT6cnh3MXY3TWstQWM)
 
 # Usage
 Add a dependency to your `build.gradle`:
 ```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+...
+
 dependencies {
-    compile 'com.crystal:crystalrangeseekbar:1.1.3'
+    compile 'com.jemshit:crystal-range-seekbar:1.2.0'
 }
 ```
 
@@ -339,6 +343,9 @@ __Available attributes__
 + ``data_type`` can be ``_long`` or ``_double`` or ``_integer`` or ``_float`` or ``_short`` or ``_byte``, default ``_integer``
 
 ## Changelog
+
+##### 1.2.0 - 30-Jul-2018
+- Release containing all bug fixes, PRs since 1.1.3 (2016 Sep)
 
 ##### 1.1.2 - 24-Aug-2016
 - Bug fixed when update property programmatically.
